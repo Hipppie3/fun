@@ -1,0 +1,90 @@
+.navbar {
+ position: sticky;
+ top: 0;
+ width: 100%;
+ /* Full width relative to the viewport */
+ height: 40px;
+ background-color: #333;
+ color: white;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 1000;
+ padding: 0 20px;
+ /* Optional: Add padding for inner content spacing */
+}
+
+.navbar-left {
+ display: flex;
+ align-items: center;
+}
+
+.nav-link {
+ color: white;
+ text-decoration: none;
+ margin: 0 15px;
+ font-size: 16px;
+ font-weight: bold;
+ transition: color 0.3s;
+}
+
+.nav-link:hover {
+ color: #ff9800;
+}
+
+.home-link {
+ margin-right: auto;
+ /* Keeps "Home" aligned to the left */
+}
+
+/* Hamburger Button Styles */
+.hamburger {
+ display: none;
+ flex-direction: column;
+ background: none;
+ border: none;
+ cursor: pointer;
+}
+
+.hamburger-line {
+ width: 25px;
+ height: 3px;
+ background-color: white;
+ margin: 4px 0;
+ transition: transform 0.3s;
+}
+
+/* Mobile Menu */
+.navbar-links {
+ display: flex;
+ align-items: center;
+ transition: all 0.3s ease;
+}
+
+.navbar-links.open {
+ display: flex;
+ flex-direction: column;
+ background-color: #333;
+ position: absolute;
+ top: 40px;
+ right: 0;
+ width: 100%;
+ padding: 10px 0;
+ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links.open .nav-link {
+ margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ .hamburger {
+  display: flex;
+ }
+
+ .navbar-links {
+  display: none;
+  flex-direction: column;
+ }
+}

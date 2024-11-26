@@ -1,0 +1,91 @@
+.food-page {
+ font-family: 'Georgia', serif;
+ /* Classic font for cultural vibe */
+ padding: 20px;
+ max-width: 600px;
+ margin: auto;
+ background: linear-gradient(135deg, #1e90ff, #ffffff, #ff4500);
+  /* Blue, white, and red gradient */
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ color: #333;
+ margin-top: 4rem;
+}
+
+.food-title {
+ text-align: center;
+ font-size: 2rem;
+ color: #8b4513;
+ /* Earthy tone for cultural vibe */
+ margin-bottom: 20px;
+ text-shadow: 1px 1px #fff;
+}
+
+.food-form {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+.food-form input {
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ font-size: 16px;
+}
+
+.food-form button {
+ padding: 10px;
+ background-color: #ffa500;
+ /* Warm orange button */
+ color: white;
+ font-size: 16px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ transition: background-color 0.3s, transform 0.2s;
+}
+
+.food-form button:hover {
+ background-color: #ff8c00;
+ transform: scale(1.05);
+ /* Slight pop-out effect */
+}
+
+.food-list {
+ margin-top: 20px;
+}
+
+.food-list ul {
+ list-style-type: none;
+ padding: 0;
+}
+
+.food-list li {
+ background-color: rgba(255, 239, 213, 0.9);
+ /* Light cream for cultural theme */
+ padding: 15px;
+ margin-bottom: 10px;
+ border-radius: 4px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.food-image {
+ max-width: 100%;
+ height: auto;
+ border-radius: 4px;
+ margin-top: 10px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.food-list h2 {
+ margin: 0;
+ font-size: 18px;
+ color: #8b4513;
+ /* Earthy tone */
+}
+
+.food-list p {
+ margin: 5px 0;
+ color: #555;
+}
