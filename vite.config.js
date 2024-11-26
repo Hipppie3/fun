@@ -1,8 +1,12 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
 export default defineConfig({
+  plugins: [react()],
   server: {
     proxy: {
       '/api': {
-        target: 'https://855c-172-249-48-107.ngrok-free.app', // Use your ngrok URL here
+        target: 'http://localhost:5111', // Backend URL
         changeOrigin: true,
         secure: false,
       },
